@@ -1,0 +1,75 @@
+First five rows:
+   PassengerId  Survived  ...  Cabin Embarked
+0            1         0  ...    NaN        S
+1            2         1  ...    C85        C
+2            3         1  ...    NaN        S
+3            4         1  ...   C123        S
+4            5         0  ...    NaN        S
+
+[5 rows x 12 columns]
+
+Dataset information:
+<class 'pandas.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   PassengerId  891 non-null    int64  
+ 1   Survived     891 non-null    int64  
+ 2   Pclass       891 non-null    int64  
+ 3   Name         891 non-null    str    
+ 4   Sex          891 non-null    str    
+ 5   Age          714 non-null    float64
+ 6   SibSp        891 non-null    int64  
+ 7   Parch        891 non-null    int64  
+ 8   Ticket       891 non-null    str    
+ 9   Fare         891 non-null    float64
+ 10  Cabin        204 non-null    str    
+ 11  Embarked     889 non-null    str    
+dtypes: float64(2), int64(5), str(5)
+memory usage: 118.9 KB
+
+Dataset shape:
+(891, 12)
+
+Missing values:
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+
+Survival count:
+Survived
+0    549
+1    342
+Name: count, dtype: int64
+
+Survival percentage: 38.38 %
+
+Survival by gender:
+Sex
+female    74.203822
+male      18.890815
+Name: Survived, dtype: float64
+
+Survival by passenger class:
+Pclass
+1    62.962963
+2    47.282609
+3    24.236253
+Name: Survived, dtype: float64
+
+Average age:
+29.36
+
+Average fare:
+32.2
